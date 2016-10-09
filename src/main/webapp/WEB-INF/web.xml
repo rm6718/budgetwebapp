@@ -1,0 +1,84 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>BudgetServlet</servlet-name>
+    <servlet-class>com.ironyard.servlet.BudgetServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>BudgetServlet</servlet-name>
+    <url-pattern>/summary</url-pattern>
+  </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>LineItemsServlet</servlet-name>
+        <servlet-class>com.ironyard.servlet.LineItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LineItemsServlet</servlet-name>
+        <url-pattern>/lineitems</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.ironyard.servlet.BudgetSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>CreateLineItem</servlet-name>
+        <servlet-class>com.ironyard.servlet.LineItemCreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateLineItem</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>SelectServlet</servlet-name>
+        <servlet-class>com.ironyard.servlet.LISelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectServlet</servlet-name>
+        <url-pattern>/select</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.ironyard.servlet.LIUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.ironyard.servlet.LIDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+</web-app>
